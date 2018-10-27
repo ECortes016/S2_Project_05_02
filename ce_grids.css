@@ -12,18 +12,26 @@
 
 */
 
+/* div {
+    outline: 1px solid red;
+} */
 
 /* Grid Rows Styles */
 
-div.row::after {
+div.row {
     width: 100%;
+}
+
+div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+
 /* Grid Columns Styles */
-div [class^="column"] {
+
+div[class^="column"] {
     float: left;
 }
 
@@ -36,11 +44,11 @@ div [class^="column"] {
 }
 
 .column33 {
-    width: 33%;
+    width: 33.33%;
 }
 
 .column67 {
-    width: 67%;
+    width: 66.67%;
 }
 
 .column25 {
@@ -68,3 +76,51 @@ div [class^="column"] {
 }
 
 /* Grid Spacing Styles */
+
+.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[class^="column"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[class^="cell"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div[class^="container"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div.cell a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
