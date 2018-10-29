@@ -17,7 +17,7 @@
 } */
 
 /* Grid Rows Styles */
-
+/* divs with the class selector of row are set to a width of 100% and are also cleared of its floating objects */
 div.row {
     width: 100%;
 }
@@ -30,7 +30,7 @@ div.row::after {
 
 
 /* Grid Columns Styles */
-
+/* All divs are floated left and are set to a width corresponding to their class selector. An example would be column12 which would be set to a width of 12% */
 div[class^="column"] {
     float: left;
 }
@@ -76,6 +76,7 @@ div[class^="column"] {
 }
 
 /* Grid Spacing Styles */
+/* All divs are set to the border box model which allows for padding to go inside of the grids */
 
 .container {
     -webkit-box-sizing: border-box;

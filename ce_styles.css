@@ -13,6 +13,7 @@
 
 
 /* Window and Body Styles */
+/* The background color of the page is set to a grey. A max and min width is also set and the links inside of the nav have no text decoration. */
 html {
     background-color: rgb(101, 101, 101)
 }
@@ -40,6 +41,7 @@ nav ul li a:link {
 }
 
 /* Body Header Styles */
+/* The header is given a red-ish background color and the links turn pink while hovering over them with your cursor. Padding is then added to the list within the unordered list while floated to the left. */
 header {
     background-color: rgb(191, 68, 70);
     height: 40px;
@@ -65,12 +67,13 @@ nav ul li a:hover:visited {
 }
 
 /* DIV Container Styles */
+/* Any divs with the class selector column are displayed as blocks and are given padding to not be close to the other images  */
 div#container {
     padding-right: 8px;
     padding-bottom: 8px;
 }
 
-div[class^="cell"]>a {
+div[class^="column"]>a {
     display: block;
     width: 100%;
     padding-left: 8px;
@@ -78,7 +81,7 @@ div[class^="cell"]>a {
 }
 
 /* Footer Styles */
-
+/* The footer is set on the right side and set to an absolute position set to the bottom right of the page. */
 footer {
     position: absolute;
     right: 8px;
